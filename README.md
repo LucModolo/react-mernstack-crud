@@ -87,3 +87,14 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
 # react-mernstack-crud
+
+# separate Mongo db server
+I install the backend on an separate db server and run it with nodemon server.js
+
+
+
+
+
+
+
+
