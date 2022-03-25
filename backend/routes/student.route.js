@@ -67,6 +67,7 @@ router.route('/delete-student/:id').delete((req, res, next) => {
       res.status(200).json({
         msg: data,
       })
+      console.log('Student deleted successfuly !')
     }
   })
 })

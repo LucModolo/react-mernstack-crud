@@ -1,3 +1,3 @@
 module.exports = {
-  db: 'mongodb://localhost:27017/reactdb',
+  db: 'mongodb:/172.17.22.31:27017/myDatabase',
 }
