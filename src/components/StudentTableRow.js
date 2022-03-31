@@ -12,7 +12,7 @@ export default class StudentTableRow extends Component {
   deleteStudent() {
     axios
       .delete(
-        'http://172.17.22.31:4000/students/delete-student/' + this.props.obj._id,
+        'http://172.17.22.35:4000/students/delete-student/' + this.props.obj._id,
       )
       .then((res) => {
         console.log('Student successfully deleted!')

@@ -1,10 +1,15 @@
 import React, { Component } from "react";
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button';
+import './db.js';
 import axios from 'axios';
+
+let dbConect = 'http://172.17.22.35:4000';
+  
 
 export default class CreateStudent extends Component {
 
+   
   constructor(props) {
     super(props)
 
@@ -42,11 +47,13 @@ export default class CreateStudent extends Component {
       email: this.state.email,
       rollno: this.state.rollno
     };
-    axios.post('http://172.17.22.31:4000/students/create-student', studentObject)
-      .then(res => console.log(res.data));
+    axios.post(dbConect+'/students/create-student', studentObject)
+    .then(res => console.log(res.data))
+    console.log(dbConect);
 
     this.setState({ name: '', email: '', rollno: '' })
   }
+ 
 
   render() {
     return (<div className="form-wrapper">
